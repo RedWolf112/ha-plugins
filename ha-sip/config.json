@@ -72,6 +72,12 @@
         "sensors": {
             "enabled": false,
             "entity_prefix": "ha_sip"
+        },
+        "mqtt": {
+            "broker_address": "",
+            "broker_port": "1883",
+            "broker_username": "",
+            "broker_password": ""
         }
     },
     "schema": {
@@ -131,6 +137,12 @@
         "sensors": {
             "enabled": "bool",
             "entity_prefix": "str"
+        },
+        "mqtt": {
+            "broker_address": "str",
+            "broker_port": "int",
+            "broker_username": "str",
+            "broker_password": "str"
         }
     },
     "host_network": true,

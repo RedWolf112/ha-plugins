@@ -54,4 +54,15 @@ export HA_BASE_URL="http://supervisor/core/api"
 export HA_WEBSOCKET_URL="ws://supervisor/core/websocket"
 export HA_TOKEN="${SUPERVISOR_TOKEN}"
 
+export HA_BASE_URL="http://supervisor/core/api"
+export HA_WEBSOCKET_URL="ws://supervisor/core/websocket"
+
+export BROKER_ADDRESS = "$(bashio::config 'mqtt.broker_address')"
+export BROKER_PORT = "$(bashio::config 'mqtt.broker_port')"
+export MQTT_USERNAME = "$(bashio::config 'mqtt.broker_username')"
+export MQTT_PASSWORD = "$(bashio::config 'mqtt.broker_password')"
+
+export MQTT_TOPIC="hasip/execute"
+export MQTT_STATE_TOPIC="hasip/state"
+
 python3 /ha-sip/main.py
