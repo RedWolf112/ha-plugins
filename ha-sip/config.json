@@ -21,7 +21,8 @@
             "log_level": 5,
             "name_server": "",
             "cache_dir": "",
-            "global_options": ""
+            "global_options": "",
+            "command_source": "stdin"
         },
         "sip": {
             "enabled": true,
@@ -86,7 +87,8 @@
             "log_level": "int",
             "name_server": "str",
             "cache_dir": "str",
-            "global_options": "str"
+            "global_options": "str",
+            "command_source": "list(stdin|mqtt)"
         },
         "sip": {
             "enabled": "bool",
